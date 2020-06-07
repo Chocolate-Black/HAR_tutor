@@ -1,0 +1,47 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+<view class='clock'>
+  <text >{{minute}}:{{second}}</text>
+</view>
+
+<van-cell title="设定采样频率" custom-style="margin-bottom:20rpx;" is-link bind:click="showPopup" />
+<van-popup show="{{ show }}" bind:close="onClose" custom-style="height: 40%;  width: 80%;">
+  <van-picker 
+      show-toolbar
+      title="标题"
+      columns="{{sample_list}}"
+      bind:change="setSampling"
+      bind:cancel="onClose"
+      bind:confirm="onConfirm"
+      />
+</van-popup>
+
+
+<van-radio-group custom-style="margin-bottom:20rpx;" value="{{ hands}}" bind:change="changeHands">
+  <van-radio name="left">左手</van-radio>
+  <van-radio name="right">右手</van-radio>
+</van-radio-group>
+
+<van-field
+    custom-style="margin-bottom:20rpx;" 
+    value="{{ name }}"
+    placeholder="请输入实验者姓名"
+    border="{{ false }}"
+    bind:change="nameChange"
+/>
+
+
+
+<view class="button_group">
+  <van-button color="#0081cf" block  custom-style="margin-bottom:20rpx;" bindtap="startSetInter" data-activity="standing">站立</van-button>
+  <van-button color="#0081cf" block  custom-style="margin-bottom:20rpx;" bindtap="startSetInter" data-activity="walk">行走</van-button>
+
+  <van-button color="#0081cf" block custom-style="margin-bottom:20rpx;" bindtap="startSetInter" data-activity="squat">深蹲</van-button>
+
+  <van-button color="#0081cf" block custom-style="margin-bottom:20rpx;" bindtap="startSetInter" data-activity="expand">扩胸</van-button>
+
+  <van-button color="#0081cf" block custom-style="margin-bottom:20rpx;" bindtap="startSetInter" data-activity="RussianTwist">俄罗斯转体</van-button>
+
+  <van-button color="#0081cf" block custom-style="margin-bottom:20rpx;"  bindtap="startSetInter" data-activity="situp">仰卧起坐</van-button>
+</view>
+

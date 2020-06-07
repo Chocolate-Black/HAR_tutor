@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-button": "../../components/@vant/weapp/button/index",
+    "van-picker": "../../components/@vant/weapp/picker/index",
+    "van-popup": "../../components/@vant/weapp/popup/index",
+    "van-cell": "../../components/@vant/weapp/cell/index",
+    "van-radio": "../../components/@vant/weapp/radio/index",
+    "van-radio-group": "../../components/@vant/weapp/radio-group/index",
+    "van-field": "../../components/@vant/weapp/field/index"
+  }
+}

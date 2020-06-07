@@ -1,0 +1,11 @@
+/* miniprogram/pages/index/index.wxss */
+.clock{
+  text-align: center;
+  font-size: 50rpx;
+  margin: 20rpx;
+}
+.button_group{
+  text-align: center;
+}
+
+
