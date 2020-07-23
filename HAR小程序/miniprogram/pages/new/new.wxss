@@ -1,0 +1,48 @@
+/* miniprogram/pages/new/new.wxss */
+.scroll{
+  margin-top: 8vh;
+}
+
+.introduction{
+  display: block;
+  text-align: center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+.test{
+  margin-top: 100rpx;
+}
+
+.stop{
+  margin-top: 100rpx;
+  background: #00abff;
+  color: white;
+}
+
+.action{
+  margin: 40rpx;
+  display: block;
+  text-align: center;
+  font-size: 40rpx;
+  color: #ff6302;
+}
+
+.num{
+  margin: 40rpx;
+  display: block;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+.tozero{
+  color: white;
+  background: #40493b;
+}

@@ -1,0 +1,28 @@
+<!--miniprogram/pages/new/new.wxml-->
+<view class="top">
+  <text class="topic">HAR人体动作识别</text>
+</view>
+<scroll-view class='scroll'>
+  <view class="introduction">
+    <text>欢迎使用HAR人体动作识别小程序\n</text>
+    <text>点击下方测试按钮，即可开始识别您的动作\n</text>
+    <text>该小程序可以识别的动作如下：\n</text>
+    <text>- 站立\n</text>
+    <text>- 行走\n</text>
+    <text>- 深蹲\n</text>
+    <text>- 扩胸\n</text>
+    <text>- 仰卧起坐\n</text>
+  </view>
+  <button wx:if="{{flag == 0}}" type="primary" class="test" bindtap="start">开始测试</button>
+  <button wx:else class="stop" bindtap="stop">结束测试</button>
+  <view wx:if="{{flag == 1}}" class="action">
+    <text>当前动作：{{action}}</text>
+  </view>
+  <view class="num">
+    <text>行走（步数）：{{int_walk}}\n</text>
+    <text>深蹲：{{int_squat}}\n</text>
+    <text>扩胸：{{int_expand}}\n</text>
+    <text>仰卧起坐：{{int_situp}}\n</text>
+  </view>
+  <button class="tozero" bindtap="reset">清零计数</button>
+</scroll-view>

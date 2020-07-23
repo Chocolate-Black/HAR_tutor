@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/new/new"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "plugins": {
+    "tfjsPlugin": {
+      "version": "0.0.9",
+      "provider": "wx6afed118d9e81df9"
+    }
+  }
+}
